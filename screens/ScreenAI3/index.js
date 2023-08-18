@@ -5,19 +5,19 @@ const coffeeData = [{
   name: 'Ethiopian Yirgacheffe',
   description: 'A bright and fruity coffee with notes of blueberry and citrus.',
   price: '$15.99',
-  image: 'https://tinyurl.com/42evm3m3'
+  image: 'https://i.imgur.com/YJJabkk.jpg'
 }, {
   id: 2,
   name: 'Colombian Supremo',
   description: 'A rich and full-bodied coffee with notes of chocolate and caramel.',
   price: '$12.99',
-  image: 'https://tinyurl.com/42evm3m3'
+  image: 'https://i.imgur.com/YJJabkk.jpg'
 }, {
   id: 3,
   name: 'Costa Rican Tarrazu',
   description: 'A smooth and balanced coffee with notes of honey and almond.',
   price: '$14.99',
-  image: 'https://tinyurl.com/42evm3m3'
+  image: 'https://i.imgur.com/YJJabkk.jpg'
 }];
 
 const MainScreen = () => {
