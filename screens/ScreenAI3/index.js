@@ -34,6 +34,9 @@ const MainScreen = () => {
               <Text style={styles.coffeeName}>{coffee.name}</Text>
               <Text style={styles.coffeeDescription}>{coffee.description}</Text>
               <Text style={styles.coffeePrice}>{coffee.price}</Text>
+              <TouchableOpacity style={styles.detailsButton}>
+                <Text style={styles.detailsButtonText}>Details</Text>
+              </TouchableOpacity>
             </View>
           </View>)}
       </View>
@@ -95,6 +98,18 @@ const styles = StyleSheet.create({
   coffeePrice: {
     color: "#D54C44",
     fontSize: 16,
+    fontWeight: "bold"
+  },
+  detailsButton: {
+    backgroundColor: "#D54C44",
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    marginTop: 5
+  },
+  detailsButtonText: {
+    color: "#efefef",
+    fontSize: 14,
     fontWeight: "bold"
   },
   highlightButton: {
