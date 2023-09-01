@@ -3,7 +3,7 @@ import { StyleSheet, ScrollView, SafeAreaView, Text } from "react-native";
 import { Slider } from "react-native-elements";
 
 const Untitled5 = () => {
-  const [sliderValue, setSliderValue] = useState(3);
+  const [sliderValue, setSliderValue] = useState(1);
 
   const handleSliderChange = value => {
     setSliderValue(value);
@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
-    marginVertical: 30
+    marginVertical: 30,
+    opacity: 1
   },
   answer: {
     fontSize: 30,
