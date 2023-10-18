@@ -21,19 +21,21 @@ const AttendeeList = props => {
 
   const attendeesToMap = searchText ? searchAttendees() : attendees;
 
-  const Item = ({ data }) => {
+  const Item = ({
+    data
+  }) => {
     return <View style={styles.userCard}>
         <Image source={require("./assets/userIcon.png")} style={styles.imageStyles} />
         <View style={styles.contentView}>
           <Text style={styles.nameText}>{data.name}</Text>
           <Text style={styles.emailText}>{data.email}</Text>
           <View style={styles.buttonView}>
-            <Pressable style={styles.loginButton} onPress={() => {}} >
+            <Pressable style={styles.loginButton} onPress={() => {}}>
               <Text style={styles.textColor}>
                 Attended
               </Text>
             </Pressable>
-            <Pressable style={styles.loginButton} onPress={() => {}} >
+            <Pressable style={styles.loginButton} onPress={() => {}}>
               <Text style={styles.textColor}>
                 Not Attended
               </Text>
@@ -43,16 +45,12 @@ const AttendeeList = props => {
       </View>;
   };
 
-  return (
-    <View style={styles.container}>
+  return <View style={styles.container}>
       <TextInput placeholder="Search..." style={styles.formInput} onChangeText={setSearchText} placeholderTextColor={"grey"} />
-      <FlatList
-        data={attendeesToMap}
-        renderItem={({ item }) => <Item data={item} />}
-        keyExtractor={item => item.email}
-        ListEmptyComponent={() => <View style={styles.centeredView}><Text>No record found.</Text></View>} />
-    </View>
-  );
+      <FlatList data={attendeesToMap} renderItem={({
+      item
+    }) => <Item data={item} />} keyExtractor={item => item.email} ListEmptyComponent={() => <View style={styles.centeredView}><Text>No record found.</Text></View>} />
+    </View>;
 };
 
 const styles = StyleSheet.create({
